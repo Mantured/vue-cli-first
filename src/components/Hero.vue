@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <h1>{{ myMsg }}</h1>
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -8,8 +8,10 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Hero",
-  props: {
-    myMsg: String,
+  data() {
+    return {
+      msg: "sono un Jumbotron, che odia Prettier",
+    };
   },
 };
 </script>
